@@ -1,0 +1,27 @@
+# First Dental Home — URL redirects for Cloudflare Pages
+# This file tells Cloudflare: when someone visits an old URL, send them to the new section.
+# Format: OLD_PATH  NEW_PATH  STATUS_CODE
+# 301 = permanent redirect (what we want for SEO and ad continuity)
+
+# Old Wix pages → new single-page sections
+/services-1          /#services    301
+/services            /#services    301
+/meet-the-team       /#team        301
+/team                /#team        301
+/our-team            /#team        301
+/about               /#about       301
+/contact             /#contact     301
+/contact-us          /#contact     301
+/locations           /#contact     301
+/testimonials        /#testimonials  301
+
+# Booking calendar — keep redirecting to the actual Wix Bookings page
+# (since the booking still lives on Wix Bookings)
+/booking-calendar    https://www.firstdentalhome.com/booking-calendar  302
+/book                https://www.firstdentalhome.com/booking-calendar  302
+/book-online         https://www.firstdentalhome.com/booking-calendar  302
+/appointment         https://www.firstdentalhome.com/booking-calendar  302
+
+# Catch-all: any other unknown old URL goes to the homepage
+# (uncomment the line below ONLY after you've identified all your important ad URLs)
+# /*                  /             301
