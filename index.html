@@ -7,18 +7,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#0D1B2A;
-  --navy-mid:#1B2F44;
-  --navy-soft:#2A4057;
-  --gold:#C9A84C;
-  --gold-light:#E2C97E;
-  --gold-pale:#FAF3E0;
-  --cream:#FDFAF5;
+  --navy:#1A3A8A;
+  --navy-mid:#264999;
+  --navy-soft:#3A5BAB;
+  --gold:#8A95A8;
+  --gold-light:#C8CFD9;
+  --gold-pale:#E8F0FB;
+  --cream:#F5F8FC;
   --white:#FFFFFF;
-  --text:#0D1B2A;
-  --muted:#5A6E82;
-  --border:rgba(13,27,42,0.1);
-  --gold-border:rgba(201,168,76,0.25);
+  --sky:#4A90D9;
+  --text:#1A3A8A;
+  --muted:#6B7A92;
+  --border:rgba(26,58,138,0.1);
+  --gold-border:rgba(138,149,168,0.35);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -29,7 +30,7 @@ nav{
   position:fixed;top:0;left:0;right:0;z-index:100;
   display:flex;align-items:center;justify-content:space-between;
   padding:20px 60px;
-  background:rgba(253,250,245,0.95);
+  background:rgba(245,248,252,0.95);
   backdrop-filter:blur(16px);
   border-bottom:0.5px solid var(--border);
   transition:all .3s;
@@ -66,7 +67,7 @@ nav{
   content:'';position:absolute;
   top:-200px;right:-200px;
   width:600px;height:600px;
-  background:radial-gradient(ellipse,rgba(201,168,76,.06) 0%,transparent 70%);
+  background:radial-gradient(ellipse,rgba(138,149,168,.06) 0%,transparent 70%);
   pointer-events:none;
 }
 .hero-left{
@@ -90,7 +91,7 @@ nav{
   margin-bottom:10px;
   animation:fadeUp .7s .1s ease both;
 }
-.hero h1 em{font-style:italic;color:var(--gold)}
+.hero h1 em{font-style:italic;color:var(--sky)}
 .hero-sub{
   font-size:16px;font-weight:300;color:var(--muted);
   line-height:1.8;max-width:440px;
@@ -140,8 +141,8 @@ nav{
   content:'';position:absolute;
   inset:0;
   background:
-    radial-gradient(ellipse at 30% 40%,rgba(201,168,76,.08) 0%,transparent 60%),
-    radial-gradient(ellipse at 70% 70%,rgba(201,168,76,.05) 0%,transparent 50%);
+    radial-gradient(ellipse at 30% 40%,rgba(138,149,168,.08) 0%,transparent 60%),
+    radial-gradient(ellipse at 70% 70%,rgba(138,149,168,.05) 0%,transparent 50%);
 }
 /* ── HERO MISSION PANEL ── */
 .hero-mission{
@@ -161,7 +162,7 @@ nav{
 /* Decorative gold corner brackets */
 .mission-corner{
   position:absolute;width:22px;height:22px;
-  border:0.5px solid rgba(201,168,76,.45);
+  border:0.5px solid rgba(138,149,168,.45);
 }
 .mc-tl{top:0;left:0;border-right:none;border-bottom:none}
 .mc-tr{top:0;right:0;border-left:none;border-bottom:none}
@@ -250,7 +251,7 @@ nav{
 }
 .ribbon-icon svg{width:18px;height:18px;stroke:var(--navy)}
 .ribbon-text{font-size:12px;font-weight:500;color:var(--navy);letter-spacing:.5px}
-.ribbon-sep{width:1px;height:24px;background:rgba(13,27,42,.2);flex-shrink:0}
+.ribbon-sep{width:1px;height:24px;background:rgba(26,58,138,.2);flex-shrink:0}
 
 /* ── INTRO SECTION ── */
 .intro{
@@ -273,7 +274,7 @@ nav{
   font-weight:500;line-height:1.12;
   color:var(--navy);margin-bottom:24px;
 }
-.section-title em{font-style:italic;color:var(--gold)}
+.section-title em{font-style:italic;color:var(--sky)}
 .section-body{
   font-size:15px;font-weight:300;color:var(--muted);
   line-height:1.9;margin-bottom:20px;
@@ -303,7 +304,7 @@ nav{
 }
 .intro-right::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse at 60% 30%,rgba(201,168,76,.07) 0%,transparent 60%);
+  background:radial-gradient(ellipse at 60% 30%,rgba(138,149,168,.07) 0%,transparent 60%);
 }
 .intro-quote{
   position:relative;z-index:1;
@@ -312,7 +313,7 @@ nav{
 }
 .quote-mark{
   font-family:'Playfair Display',serif;
-  font-size:120px;color:rgba(201,168,76,.1);
+  font-size:120px;color:rgba(138,149,168,.1);
   line-height:.6;margin-bottom:20px;
 }
 .quote-text{
@@ -337,7 +338,7 @@ nav{
 .pillar:last-child{border-bottom:none}
 .pillar-icon{
   width:36px;height:36px;
-  border:0.5px solid rgba(201,168,76,.3);
+  border:0.5px solid rgba(138,149,168,.3);
   border-radius:50%;
   display:flex;align-items:center;justify-content:center;
   flex-shrink:0;margin-top:2px;
@@ -376,10 +377,10 @@ nav{
 }
 .svc:hover{background:var(--navy)}
 .svc:hover::after{transform:scaleX(1)}
-.svc:hover .svc-num{color:rgba(201,168,76,.2)}
+.svc:hover .svc-num{color:rgba(138,149,168,.2)}
 .svc:hover .svc-name{color:white}
 .svc:hover .svc-desc{color:rgba(255,255,255,.5)}
-.svc:hover .svc-icon{border-color:rgba(201,168,76,.2);background:rgba(201,168,76,.05)}
+.svc:hover .svc-icon{border-color:rgba(138,149,168,.2);background:rgba(138,149,168,.05)}
 .svc:hover .svc-icon svg{stroke:var(--gold-light)}
 .svc-num{
   font-family:'Playfair Display',serif;
@@ -420,7 +421,7 @@ nav{
   content:'';position:absolute;
   top:-300px;left:-300px;
   width:600px;height:600px;
-  background:radial-gradient(ellipse,rgba(201,168,76,.04) 0%,transparent 70%);
+  background:radial-gradient(ellipse,rgba(138,149,168,.04) 0%,transparent 70%);
 }
 .promise-left{position:relative;z-index:1}
 .promise-title{
@@ -445,7 +446,7 @@ nav{
 .promise-item:last-child{border-bottom:none}
 .promise-icon{
   width:40px;height:40px;
-  border:0.5px solid rgba(201,168,76,.25);
+  border:0.5px solid rgba(138,149,168,.25);
   border-radius:50%;
   display:flex;align-items:center;justify-content:center;
   flex-shrink:0;
@@ -468,7 +469,7 @@ nav{
   position:relative;
   transition:all .3s;
 }
-.tcard:hover{border-color:var(--gold-border);box-shadow:0 16px 40px rgba(201,168,76,.06)}
+.tcard:hover{border-color:var(--gold-border);box-shadow:0 16px 40px rgba(138,149,168,.06)}
 .tcard-stars{color:var(--gold);font-size:14px;margin-bottom:20px;letter-spacing:4px}
 .tcard-text{
   font-family:'Playfair Display',serif;
@@ -493,7 +494,7 @@ nav{
 .priv-left{display:flex;align-items:center;gap:24px}
 .priv-icon{
   width:56px;height:56px;
-  border:1px solid rgba(13,27,42,.2);
+  border:1px solid rgba(26,58,138,.2);
   border-radius:50%;
   display:flex;align-items:center;justify-content:center;
   flex-shrink:0;
@@ -503,7 +504,7 @@ nav{
   font-family:'Playfair Display',serif;
   font-size:24px;font-weight:500;color:var(--navy);margin-bottom:4px;
 }
-.priv-sub{font-size:13px;font-weight:300;color:rgba(13,27,42,.6);letter-spacing:.3px}
+.priv-sub{font-size:13px;font-weight:300;color:rgba(26,58,138,.6);letter-spacing:.3px}
 
 /* ── CONTACT / BOOKING ── */
 .contact{
@@ -593,7 +594,7 @@ footer{
 .team::before{
   content:'';position:absolute;
   top:0;right:0;width:400px;height:400px;
-  background:radial-gradient(ellipse,rgba(201,168,76,.05) 0%,transparent 70%);
+  background:radial-gradient(ellipse,rgba(138,149,168,.05) 0%,transparent 70%);
   pointer-events:none;
 }
 .team-header{text-align:center;max-width:640px;margin:0 auto 72px;position:relative;z-index:1}
@@ -618,7 +619,7 @@ footer{
 }
 .dr-card:hover{
   border-color:var(--gold-border);
-  box-shadow:0 20px 50px rgba(13,27,42,.08);
+  box-shadow:0 20px 50px rgba(26,58,138,.08);
   transform:translateY(-3px);
 }
 .dr-photo{
@@ -687,7 +688,7 @@ footer{
 }
 .staff-card:hover{
   border-color:var(--gold-border);
-  box-shadow:0 12px 30px rgba(13,27,42,.05);
+  box-shadow:0 12px 30px rgba(26,58,138,.05);
   transform:translateY(-2px);
 }
 .staff-photo{
@@ -733,7 +734,7 @@ footer{
 }
 .loc-card:hover{
   border-color:var(--gold-border);
-  box-shadow:0 20px 50px rgba(13,27,42,.06);
+  box-shadow:0 20px 50px rgba(26,58,138,.06);
   transform:translateY(-3px);
 }
 .loc-map{
@@ -805,7 +806,7 @@ footer{
   border:0.5px solid var(--gold-border);
   border-radius:4px;
   overflow:hidden;
-  box-shadow:0 20px 50px rgba(13,27,42,.06);
+  box-shadow:0 20px 50px rgba(26,58,138,.06);
 }
 
 /* Navy header strip */
@@ -820,8 +821,8 @@ footer{
   content:'';
   position:absolute;inset:0;
   background:
-    radial-gradient(ellipse at 30% 40%,rgba(201,168,76,.08) 0%,transparent 60%),
-    radial-gradient(ellipse at 70% 70%,rgba(201,168,76,.05) 0%,transparent 50%);
+    radial-gradient(ellipse at 30% 40%,rgba(138,149,168,.08) 0%,transparent 60%),
+    radial-gradient(ellipse at 70% 70%,rgba(138,149,168,.05) 0%,transparent 50%);
   pointer-events:none;
 }
 .booking-frame-eyebrow{
@@ -1019,7 +1020,7 @@ footer{
   color:var(--gold-light);
   cursor:pointer;
   display:flex;align-items:center;justify-content:center;
-  box-shadow:0 8px 28px rgba(13,27,42,.25);
+  box-shadow:0 8px 28px rgba(26,58,138,.25);
   transition:all .25s ease;
   animation:fadeUp .6s 1s ease both;
 }
@@ -1027,7 +1028,7 @@ footer{
   background:var(--gold);
   color:var(--navy);
   transform:translateY(-2px);
-  box-shadow:0 12px 32px rgba(201,168,76,.3);
+  box-shadow:0 12px 32px rgba(138,149,168,.3);
 }
 .chat-launcher svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
 .chat-launcher.hidden{transform:scale(0);opacity:0;pointer-events:none}
@@ -1053,7 +1054,7 @@ footer{
   border-radius:8px;
   display:flex;flex-direction:column;
   overflow:hidden;
-  box-shadow:0 24px 64px rgba(13,27,42,.2);
+  box-shadow:0 24px 64px rgba(26,58,138,.2);
   transform:translateY(20px) scale(.96);
   opacity:0;pointer-events:none;
   transition:all .28s cubic-bezier(.2,.9,.3,1);
@@ -1082,7 +1083,7 @@ footer{
 }
 .chat-header::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse at 30% 50%,rgba(201,168,76,.08) 0%,transparent 60%);
+  background:radial-gradient(ellipse at 30% 50%,rgba(138,149,168,.08) 0%,transparent 60%);
   pointer-events:none;
 }
 .chat-avatar{
@@ -1116,7 +1117,7 @@ footer{
   color:rgba(255,255,255,.6);
   transition:all .2s;position:relative;z-index:1;
 }
-.chat-close:hover{color:var(--gold-light);background:rgba(201,168,76,.1)}
+.chat-close:hover{color:var(--gold-light);background:rgba(138,149,168,.1)}
 .chat-close svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round}
 
 /* Messages area */
@@ -1128,7 +1129,7 @@ footer{
   scroll-behavior:smooth;
 }
 .chat-messages::-webkit-scrollbar{width:6px}
-.chat-messages::-webkit-scrollbar-thumb{background:rgba(13,27,42,.15);border-radius:3px}
+.chat-messages::-webkit-scrollbar-thumb{background:rgba(26,58,138,.15);border-radius:3px}
 .chat-messages::-webkit-scrollbar-track{background:transparent}
 
 /* Message bubbles */
@@ -1162,7 +1163,7 @@ footer{
 .chat-msg a{
   color:var(--gold);
   text-decoration:underline;
-  text-decoration-color:rgba(201,168,76,.3);
+  text-decoration-color:rgba(138,149,168,.3);
   text-underline-offset:2px;
 }
 .chat-msg a:hover{text-decoration-color:var(--gold)}
@@ -1262,7 +1263,7 @@ footer{
   background:var(--white);
   border-color:var(--gold);
   transform:translateY(-1px);
-  box-shadow:0 8px 24px rgba(13,27,42,.04);
+  box-shadow:0 8px 24px rgba(26,58,138,.04);
 }
 .chat-prompt-icon{
   width:42px;height:42px;
@@ -1363,16 +1364,16 @@ footer{
       <!-- Teardrop-tooth + compass hybrid mark -->
       <svg viewBox="0 0 42 42" fill="none">
         <!-- Outer compass ring -->
-        <circle cx="21" cy="21" r="19" stroke="#C9A84C" stroke-width="0.5" opacity="0.4"/>
+        <circle cx="21" cy="21" r="19" stroke="#8A95A8" stroke-width="0.5" opacity="0.4"/>
         <!-- Compass north tick -->
-        <line x1="21" y1="2" x2="21" y2="5" stroke="#C9A84C" stroke-width="1" stroke-linecap="round"/>
-        <line x1="21" y1="37" x2="21" y2="40" stroke="#C9A84C" stroke-width="0.5" stroke-linecap="round" opacity="0.4"/>
-        <line x1="2" y1="21" x2="5" y2="21" stroke="#C9A84C" stroke-width="0.5" stroke-linecap="round" opacity="0.4"/>
-        <line x1="37" y1="21" x2="40" y2="21" stroke="#C9A84C" stroke-width="0.5" stroke-linecap="round" opacity="0.4"/>
+        <line x1="21" y1="2" x2="21" y2="5" stroke="#8A95A8" stroke-width="1" stroke-linecap="round"/>
+        <line x1="21" y1="37" x2="21" y2="40" stroke="#8A95A8" stroke-width="0.5" stroke-linecap="round" opacity="0.4"/>
+        <line x1="2" y1="21" x2="5" y2="21" stroke="#8A95A8" stroke-width="0.5" stroke-linecap="round" opacity="0.4"/>
+        <line x1="37" y1="21" x2="40" y2="21" stroke="#8A95A8" stroke-width="0.5" stroke-linecap="round" opacity="0.4"/>
         <!-- Teardrop-tooth -->
-        <path d="M21 8 C16 8 12 12 12 16.5 C12 20 13.5 23 16 25.5 L21 34 L26 25.5 C28.5 23 30 20 30 16.5 C30 12 26 8 21 8Z" fill="#0D1B2A"/>
+        <path d="M21 8 C16 8 12 12 12 16.5 C12 20 13.5 23 16 25.5 L21 34 L26 25.5 C28.5 23 30 20 30 16.5 C30 12 26 8 21 8Z" fill="#1A3A8A"/>
         <!-- Tooth root hint -->
-        <circle cx="21" cy="16.5" r="3" fill="#C9A84C" opacity="0.6"/>
+        <circle cx="21" cy="16.5" r="3" fill="#8A95A8" opacity="0.6"/>
       </svg>
     </div>
     <div class="logo-text">
@@ -1809,7 +1810,7 @@ footer{
 
       <div class="staff-card">
         <div class="staff-photo" style="display:flex;align-items:center;justify-content:center">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8A95A8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
         </div>
         <div class="staff-name">Our Full Team</div>
         <div class="staff-role">Hygienists &amp; More</div>
@@ -2151,8 +2152,8 @@ footer{
     <div class="footer-brand">
       <a href="#" class="footer-logo">
         <svg width="28" height="28" viewBox="0 0 42 42" fill="none">
-          <path d="M21 8 C16 8 12 12 12 16.5 C12 20 13.5 23 16 25.5 L21 34 L26 25.5 C28.5 23 30 20 30 16.5 C30 12 26 8 21 8Z" fill="rgba(201,168,76,0.3)" stroke="#C9A84C" stroke-width="0.8"/>
-          <circle cx="21" cy="16.5" r="3" fill="#C9A84C" opacity="0.5"/>
+          <path d="M21 8 C16 8 12 12 12 16.5 C12 20 13.5 23 16 25.5 L21 34 L26 25.5 C28.5 23 30 20 30 16.5 C30 12 26 8 21 8Z" fill="rgba(138,149,168,0.3)" stroke="#8A95A8" stroke-width="0.8"/>
+          <circle cx="21" cy="16.5" r="3" fill="#8A95A8" opacity="0.5"/>
         </svg>
         First Dental Home
       </a>
